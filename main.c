@@ -20,6 +20,7 @@ void main(void) {
     __delay_ms(3000);
     GPIObits.GP2 = 1;
     while (1) {
+        __delay_ms(200);
         GPIObits.GP2 = GPIObits.GP3 ? 1 : 0;
     }
     return;
